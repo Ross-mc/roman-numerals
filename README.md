@@ -4,7 +4,7 @@ A simple Node.js application for converting Roman Numerals to integers.
 
 ##
 
-To install the application, run ```npm i``
+To install the application, run ```npm i```
 
 ##
 

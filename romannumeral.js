@@ -54,7 +54,20 @@ const romanToInt = str => {
         if (occurences !== null && occurences.length > value.max){
             return 'Not a Valid Roman Numeral'
         }
+    };
+
+    // Validation for disordered numerals, eg IMC
+
+    for (let i = 0; i<arrOfValues.length-1; i++){
+        let currentElem = arrOfValues[i];
+        let nextElem = arrOfValues[i+1];
+        //a character can only be smaller than the next character if it represents the 4 digit or the 9 digit and must be 1/5 or 1/10 of the next character
+        if (currentElem < nextElem && (currentElem * 10 !== nextElem && currentElem * 5 !== nextElem)){
+            return 'Not a Valid Roman Numeral'
+        };
     }
+
+    
 
     const int = arrOfValues.reduce(
         (acc, value, index, arrOfValues) => 

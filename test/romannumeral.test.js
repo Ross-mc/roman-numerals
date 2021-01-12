@@ -44,4 +44,7 @@ describe('Inalid input tests', () => {
     test('IIII', () => {
         expect(romanToInt('IIII')).toEqual('Not a Valid Roman Numeral')
     });
+    test('IMC', () => {
+        expect(romanToInt('IMC')).toEqual('Not a Valid Roman Numeral')
+    });
 });

@@ -9,6 +9,7 @@
   "author": "ross-mc",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^7.3.3",
     "jest": "^26.6.3"
   }
 }

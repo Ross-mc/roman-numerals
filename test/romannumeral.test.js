@@ -41,4 +41,7 @@ describe('Inalid input tests', () => {
     test('Empty string should return Not a Roman Numeral', () => {
         expect(romanToInt('')).toEqual('Not a Roman Numeral')
     });
+    test('IIII', () => {
+        expect(romanToInt('IIII')).toEqual('Not a Valid Roman Numeral')
+    });
 });
